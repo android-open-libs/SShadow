@@ -2,6 +2,32 @@ SShadow
 
 ![效果图](https://github.com/android-open-libs/SShadow/blob/main/demo.jpg)
 
+#### How to
+
+To get a Git project into your build:
+
+Step 1. Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Step 2. Add the dependency
+
+```
+dependencies {
+        implementation 'com.github.android-open-libs:SShadow:Tag'
+}
+```
+
+
 #### 效果一
 
 采用 `library/src/main/res/drawable/shadow_gradual_bg.xml` 设置为背景
