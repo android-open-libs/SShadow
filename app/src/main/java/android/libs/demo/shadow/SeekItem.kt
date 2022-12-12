@@ -1,7 +1,6 @@
-package android.libs.demo.shadow;
+package android.libs.demo.shadow
 
-public enum SeekItem {
-
+enum class SeekItem(var title: String) {
     PADDING("Padding"),
     SHADOW_RADIUS("Shadow Radius"),
     SHADOW_MARGIN("Shadow Margin"),
@@ -19,11 +18,4 @@ public enum SeekItem {
     CORNER_RADIUS_TOP_RIGHT("Corner Radius Top Right"),
     CORNER_RADIUS_BOTTOM_RIGHT("Corner Radius Bottom Right"),
     CORNER_RADIUS_BOTTOM_LEFT("Corner Radius Bottom Left");
-
-    String title;
-
-    SeekItem(String title) {
-        this.title = title;
-    }
-
 }
