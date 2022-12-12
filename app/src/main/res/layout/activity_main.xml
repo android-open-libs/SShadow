@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_gradual_bg"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="自定义shape"
+            android:textColor="#333333" />
+
+        <sing.shadow.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:yc_bottomShow="true"
+            app:yc_cornerRadius="12dp"
+            app:yc_dx="0dp"
+            app:yc_dy="0dp"
+            app:yc_leftShow="true"
+            app:yc_rightShow="true"
+            app:yc_shadowColor="#5500ff11"
+            app:yc_shadowLimit="12dp"
+            app:yc_topShow="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_show_"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="阴影扩散区域改变"
+                android:textColor="#333333" />
+        </sing.shadow.ShadowLayout>
+    </LinearLayout>
+
+    <sing.shadow.ShadowView
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:shadowMargin="0dp"
+        app:shadowMarginTop="0dp"
+        app:shadowMarginLeft="0dp"
+        app:shadowMarginRight="0dp"
+        app:shadowMarginBottom="0dp"
+        app:cornerRadius="10dp"
+        app:cornerRadiusTL="0dp"
+        app:cornerRadiusTR="0dp"
+        app:cornerRadiusBL="0dp"
+        app:cornerRadiusBR="0dp"
+        app:foregroundColor="@color/white"
+        app:shadowColor="#123123"
+        app:shadowDx="0.0"
+        app:shadowDy="0.0"
+        app:shadowRadius="10dp"
+        app:backgroundColor="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可以自定义阴影的控件，设置圆角，阴影颜色，偏移量等等属性。"
+            android:textColor="#333333" />
+
+    </sing.shadow.ShadowView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
