@@ -1,6 +1,6 @@
 SShadow
 
-![效果图](https://www.baidu.com/)
+![效果图](https://github.com/android-open-libs/SShadow/blob/main/demo.jpg)
 
 #### 效果一
 
