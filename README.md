@@ -23,7 +23,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-        implementation 'com.github.android-open-libs:SShadow:Tag'
+    implementation 'com.github.android-open-libs:SShadow:v1.0.1'
 }
 ```
 
